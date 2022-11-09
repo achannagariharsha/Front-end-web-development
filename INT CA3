@@ -1,0 +1,413 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="C:\Users\HARSHA REDDY\jquery-3.6.1.min.js"></script>
+    <style>
+        .box {
+            background-color: #1fc8db;  
+            background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+            color:white;
+            opacity:0.95;
+            height: 300px;
+            width: 100px;
+            border: 10px solid black;
+            padding: 50px;
+            margin: 50px;
+            float: left;
+            border-radius: 20px;
+            box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.5);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #btn {
+            height: 100px;
+            width: 100px;
+            border-radius:200px;
+            font-size: 30px;
+            text-shadow: 4px 4px 4px black;
+            color: rgb(0, 0, 0);
+            box-shadow: 4px 4px 4px grey;
+        }
+        #btn:hover {background-color: #3e8e41;
+            cursor: pointer;
+            color: yellowgreen;
+        }
+        #btn:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px rgb(48, 46, 46);
+            transform: translateY(6px);
+        }
+        h1 {
+            font-family:Arial, Helvetica, sans-serif;
+            word-spacing:5x;
+            letter-spacing: 3px;
+            color: rgb(17, 0, 255);
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .definition {
+            background-color: lightcoral;
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+            border:2px solid black;
+            padding: 20px;
+            border-radius:10px;
+            margin: 30px;
+        }
+        body{
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZT2sqSaxN0N6xNVRhpnWypNc3mL8QDO2cFQ&usqp=CAU');
+            background-size: contain;
+        }
+        table{
+            border: 5px solid black;
+            border-collapse: collapse;
+            border-style: double;
+            border-width: 4px;
+            border-color: #000000;
+            background-color: lightslategray;
+        }
+        td, th {
+            border: 5px solid black;
+            text-align: center;
+            padding: 15px 15px 15px 15px;
+            font-size: x-large;
+        }
+
+tr:nth-child(even) {
+  background:lightsalmon;
+}
+pre {
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#atomicity {
+    background-color: lightblue;
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+            border:2px solid black;
+            padding: 20px;
+            border-radius:10px;
+            margin: 30px;
+}
+#atomicit {
+            background-color: rgb(137, 238, 159);
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+            border:2px solid black;
+            padding: 20px;
+            border-radius:10px;
+            margin: 30px;
+}
+      .background-bg{
+        background-image: url(https://res.cloudinary.com/dvwamiqbq/image/upload/v1667931378/R_fiinqt.jpg);
+        background-size: cover;
+        padding: 10px;
+}
+      
+      .main{
+        font-family:Arial, Helvetica, sans-serif;
+        word-spacing:5x;
+        letter-spacing: 3px;
+        color: rgb(251, 255, 0);
+        text-shadow: 2px 2px 4px #000000;
+      }
+      .paragraph{
+            font-size: 25px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            line-height: 1.5cm;
+      }
+      #home {
+        background-color: rgb(255, 251, 0);
+        padding: 10px;
+        font-style: oblique;
+        font-size:x-large;
+        border-radius: 20px;
+      }
+      #home:active{
+        background-color: #3e8e41;
+            box-shadow: 0 5px rgb(48, 46, 46);
+            transform: translateY(6px);
+      }
+#isolation {
+            background-color:#FAFAD2;  
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+            border:2px solid black;
+            padding: 20px;
+            border-radius:10px;
+            margin: 30px;
+            padding: 5px;
+        }
+        .bg-container{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM1KQW6tmOSNQLRCVeT_pPKdkQV4h-wq-xaWPylgXG2A&s");
+            background-size: cover;
+            padding: 10px;  
+        }
+        .main-header{
+        font-family:cursive;
+        word-spacing:5x;
+        letter-spacing: 3px;
+        color: rgb(33, 185, 2);
+        text-shadow: 2px 2px 4px #000000;
+        }
+        .paragraph-iso{
+            color: black;
+            font-size: 30px;
+            font-weight: 400;
+            font-family:sans-serif;
+            line-height: 1.5cm;
+        }
+          .image-isolation{
+            height: 300px;
+            width: 350px;
+            border: 10px solid black;
+            border-style: double;
+            border-radius: 10px;
+          }
+.Durability-Container{
+            background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&w=600");
+            background-size: cover;
+            padding: 10px;
+        }
+        .dura-paragraph{
+            color:black;
+            font-size: 25px;
+            font-family:sans-serif;
+        }
+        .card-durability{
+            background-color: rgb(15, 231, 166);
+            margin: 30px;
+            border-radius: 10px;
+            padding: 10px;
+            line-height: 1.5cm;
+        }
+        .head-durability{
+        font-family:Arial, Helvetica, sans-serif;
+        word-spacing:5x;
+        letter-spacing: 3px;
+        color: rgb(255, 81, 0);
+        text-shadow: 2px 2px 4px #000000;
+        }
+        .dura-img-card{
+            text-align: center;
+            margin-bottom: 10px;     
+        }
+        .dura-image{
+            height: 400px;
+            width: 400px;
+            border: 5px solid black;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        .about-content{
+            color: black;
+            font-size:30px;
+            font-family:cursive;
+        }
+        .background-contaioner{
+            background-image: url("https://res.cloudinary.com/dvwamiqbq/image/upload/v1668010820/download_g2n9qw.jpg");
+            background-size: cover;
+            padding: 10px;
+        
+        }
+        .card-para{
+            background-color: lightpink;
+            margin: 30px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .main-heading{
+        font-family:cursive;
+        word-spacing:5x;
+        letter-spacing: 3px;
+        color: rgb(0, 217, 255);
+        text-shadow: 2px 2px 4px #000000;
+        }
+        .bold-content{
+            color: black;
+            font-size: 23px;
+            font-weight: 600;
+            font-family: "Roboto";
+        }
+        .img-c{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .img-consistency{
+            border-radius: 10px;
+            margin-left: 10px;
+            border: 5px solid black;
+            border-style: groove;
+            border-radius: 10px;
+        }   
+    </style>
+</head>
+<body>
+<div id="section1">    
+    <h1 style="text-align:center">ACID PROPERTIES IN DBMS</h1>
+    <div class="definition">
+    <p>
+        A transaction is a single logical unit of work that accesses and possibly modifies the contents of a database. Transactions access data using read and write operations. 
+        In order to maintain consistency in a database, before and after the transaction, certain properties are followed. These are called ACID properties. 
+    </p></div>
+    <div class="box" id="box1">
+    
+        <button onclick="display('section2')" id="btn">A</button>
+    </a>
+        <h4>ATOMICITY:</h4>
+       <p>The entire transaction takes place at once or does'nt happen at all.</p>
+    </div>
+
+    <div class="box">
+        <button onclick="display('section5')" id="btn">C</button>
+       <h4>CONSISTENCY:</h4>
+       <p>The data base must be consistent before and after the transaction.</p>
+    </div>
+
+    <div class="box">
+    
+        <button onclick="display('section3')" id="btn">I</button></a>
+       <h4>ISOLATION:</h4>
+      <p>Multiple transactions occur indepedently without interference.</p>
+    </div>
+
+    <div class="box">
+        <button onclick="display('section4')" id="btn">D</button>
+       <h4>DURABILITY:</h4>
+      <p>The changes of a successful transaction occurs even if the system failure occurs.</p>
+    </div>
+</div>
+<div id="section2">
+    <div class="background-bg">
+    <h1 class="main">ATOMICITY</h1>
+    <div id="atomicity">
+   <pre>
+    <p class="paragraph">
+By this, we mean that either the entire transaction takes place at once or doesn’t happen at all.
+There is no midway i.e. transactions do not occur partially.
+Each transaction is considered as one unit and either runs to completion or is not executed at all.
+It involves the following two operations. 
+—Abort: If a transaction aborts, changes made to the database are not visible. 
+—Commit: If a transaction commits, changes made are visible. 
+Atomicity is also known as the "All or nothing rule". 
+</p>
+</pre>
+<p>
+Consider the following transaction T consisting of T1 and T2:
+Transfer of 100 from account X to account Y.</p>
+</div>  
+<center>
+<table>
+    <tr>
+        <th>BEFORE: X:500</th>
+        <th>Y:200</th>
+    </tr>
+    <tr>
+ <th colspan="3">
+            TRANSACTION T
+        </th>
+    </tr>
+    <tr>
+        <td>T1</td>
+        <td>T2</td>
+    </tr>
+    <tr>
+        <td>READ(X)</td>
+        <td>READ(Y)</td>
+    </tr>
+    <tr>
+        <td>X:=X-100</td>
+        <td>Y:=Y+100</td>
+    </tr>
+    <tr>
+        <td>WRITE(X)</td>
+        <td>WRITE(Y)</td>
+    </tr>
+    <tr>
+        <td>AFTER: X:400</td>
+        <td>Y:300</td>
+    </tr>
+</table>
+</center>
+<div id="atomicit">
+    <p class="paragraph">
+If the transaction fails after completion of T1 but before completion of T2.
+( say, after write(X) but before write(Y)), then the amount has been deducted from X but not added to Y.
+This results in an inconsistent database state.
+Therefore, the transaction must be executed in its entirety in order to ensure the correctness of the database state.</p>
+</div>
+<center> 
+      <button onclick="display('section1')" id="home">HOME PAGE</button></a>
+  </center>
+</div>
+</div> 
+<div id="section3">
+<div class="bg-container">
+    <h1 class="main-header">ISOLATION</h1>
+    <div id="isolation">
+        <p class="paragraph-iso">
+        This property ensures that multiple transactions can occur concurrently without leading to the inconsistency of the database state.
+        Transactions occur independently without interference.
+        Changes occurring in a particular transaction will not be visible to any other transaction until that particular change in that transaction is written to memory or has been committed.
+        This property ensures that the execution of transactions concurrently will result in a state that is equivalent to a state achieved these were executed serially in some order.</p>
+        <p class="paragraph">Let X= 500, Y = 500.</p> 
+        <p class="paragraph">Consider two transactions T and T”.</p>
+    <center><img src="https://th.bing.com/th/id/OIP.FD1Z_8xl8-xmmxh7rGuRMAHaHa?pid=ImgDet&rs=1" class="image-isolation" id="isoimg"/></center>
+        <p class="paragraph">
+        Suppose T has been executed till Read (Y) and then T’’ starts. As a result, interleaving of operations takes place due to which T’’ reads the correct value of X but the incorrect value of Y and sum computed by 
+        T’’: (X+Y = 50, 000+500=50, 500) 
+        is thus not consistent with the sum at end of the transaction: T: (X+Y = 50, 000 + 450 = 50, 450). 
+        This results in database inconsistency, due to a loss of 50 units.
+         Hence, transactions must take place in isolation and changes should be visible only after they have been made to the main memory.</p>
+    </div>
+<center> 
+    <button onclick="display('section1')" id="home">HOME PAGE</button></a>
+</center>
+</div> 
+
+</div>
+<div id="section4">
+<div class="Durability-Container">
+    <h1 class="head-durability">Durability:</h1>
+    <div class="card-durability">
+    <p class="dura-paragraph">Once a transaction completes successfully, the changes it has made into the database should be permanent even if there is a system failure. The recovery-management component of database systems ensures the durability of transaction.</p>
+    <p class="dura-paragraph">ACID properties are the backbone of a database management system. These properties ensure that even though there are multiple transaction reading and writing the data in the database, the data is always correct and consistent. Without ACID properties there is no point in managing the data as it can’t be trusted a used in a transaction.</p>
+    </div>
+    <div class="dura-img-card">
+    <img src="https://image1.slideserve.com/3199500/durability-l.jpg" class="dura-image">
+    <img src="https://th.bing.com/th/id/OIP.Zrp4gohMrxKX_sXGnMNoJQHaFj?pid=ImgDet&rs=1" class="dura-image">
+    </div><br><br>
+    <center> 
+        <button onclick="display('section1')" id="home">HOME PAGE</button></a>
+    </center>
+</div>
+</div>
+<div id="section5">
+<div class="background-contaioner">
+    <h1 class="main-heading">Consitency</h1>
+    <div class="card-para">
+    <p class="about-content">
+        Database must be in consistent state before and after the execution of the transaction. This ensures that there are no errors in the database at any point of time. Application programmer is responsible for maintaining the consistency of the database.
+    </p>
+    <p class="bold-content">Example:</p>
+    <p class="about-content">A transferring 1000 dollars to B. A’s initial balance is 2000 and B’s initial balance is 5000.</p>
+    <p class="bold-content">Before the transaction:</p>
+    <p class="about-content">Total of A+B = 2000 + 5000 = 7000$</p>
+    <p class="bold-content">After the transaction:</p>
+    <p class="about-content">Total of A+B = 1000 + 6000 = 7000$</p>
+    <p class="bold-content">The data is consitendct before and after the execution of the transaction so this example maintains the consistency property of the database.</p>
+</div>
+<div class="img-c">
+<img src="https://4.bp.blogspot.com/-i8e5HwgMLNA/U4S6y7jj4mI/AAAAAAAAAU4/OxUavWTR2nQ/w1200-h630-p-k-no-nu/acid.jpg" class="img-consistency">
+<img src="https://th.bing.com/th/id/OIP.nnixo9tbya3Hs8JixF1JwgHaEV?pid=ImgDet&rs=1" class="img-consistency"/>
+</div><br><br>
+<center> 
+    <button onclick="display('section1')" id="home">HOME PAGE</button></a>
+</center>
+</div>
+</div>
+<script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js">
+
+</script>
+</body>
+</html>
